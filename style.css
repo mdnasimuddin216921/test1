@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url("bgs.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.main-nav{
+    display: flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav  h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.nav-manu{
+    flex: 1;
+   text-align: right;
+}
+.main-nav span{
+    display: none ;
+    
+}
+@media (max-width:792px) {
+    .nav-manu{
+        position: absolute;
+        background: rgba(0,0,0,0.2);
+        height: 100vh;
+        width: 300px;
+        top: 0;
+        right: 0px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+    .nav-manu ul li{
+        display: block;
+        margin: 10px 0px;
+
+}
+    .left{
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 1%;
+     }
+     .imgs{
+        width: 40%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+       
+    }
+    .main-nav  h1{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    
+    .main-nav span{
+        display:block ;
+        padding: 10px;
+        font-size: 30px;
+        color: #fff;
+        
+    }
+}
+@media (max-width:920px) {
+    .main-nav  h1{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+  
+    .nav-manu ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
+
+.nav-manu ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 0px 10px;
+    position: relative;
+}
+.nav-manu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav-manu ul li::after{
+    content: '';
+    height: 5px;
+    width: 0px;
+    background-color:lightcoral;
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: -5px;
+    transition: 1s;
+}
+.nav-manu ul li:hover:after{
+    width: 100%;
+}
+.left{
+   width: 50%;
+   position: absolute;
+   top: 50%;
+   left: 10%;
+}
+ .left h2{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    font-size: 30px;
+
+}
+.left p {
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 0px;
+   
+   
+} 
+.left .btn{
+    padding: 10px 15px;
+    color:black;
+    
+}
+.imgs{
+    width: 40%;
+    position: absolute;
+   
+    right: 0;
+    bottom: 0;
+   opacity: 0.5;
+}
+
+
+.section{
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    
+}
+.section h2{
+    font-size: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.section .row{
+    display: flex;
+}
+.row .profile{
+    flex-basis: 40%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+
+}
+ .profile img{
+    width: 80%;
+    border-radius: 50%;
+}
+.title{
+    flex-basis: 50%;
+    margin-top: 100px;
+}
+.title h1{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+.title p{
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(29, 51, 54);
+    line-height: 30px;
+    text-align: justify;
+}
+.icon{
+    margin-top: 100px;
+}
+.icon i{
+    font-size: 50px;
+    padding: 10px;
+    color: blue;
+}
+.skill{
+  margin-top: 100px;
+  margin-bottom: 150px;
+    width: 100%;
+   text-align: center;
+   
+}
+.skill h1{
+    font-size: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 100px 0px;
+    font-family: 'Dosis', sans-serif;
+}
+.main-box{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.main-box .box1{
+    width: 30%;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: aliceblue;
+    box-shadow: 0px 10px 5px black;
+}
+.box1 h2{
+    font-size: 40px;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.box1 p{
+    font-size: 25px;
+    text-align: justify;
+}
+.team{
+    width: 100%;
+    text-align: center;
+}
+.team h1{
+    font-size: 60px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 150px 0px;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+}
+.about .profile{
+height: auto;
+width: 20%;
+
+border: 1px solid black;
+}
+.profile .logos{
+    height: 100px;
+    width: 130px;
+    padding:5px;
+}
+.profile h3{
+    padding: 20px 0px;
+    font-size: 25px;
+}
+.profile h3 span{
+    padding:30px;
+    font-size: 16px;
+}
+.profile p{
+    padding: 0px 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+@media (max-width:900px) {
+    .footer{
+        margin-top: 60px;
+        height:400px;
+        width: 100%;
+        
+    }
+    .footer h1{
+        font-size: 20px;
+        padding:20px ;
+       
+    }
+}
+.footer{
+    margin-top: 100px;
+    height:500px;
+    width: 100%;
+    background-color: blueviolet;
+    text-align: center;
+    position: relative;
+    
+}
+.footer h1{
+    font-size: 40px;
+    padding:50px ;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #fff;
+}
+.main{
+  display:flex;
+  justify-content: space-between;
+   position: relative;
+    
+}
+.main .left-bar{
+    position: absolute;
+    left: 5%;
+    text-align: left;
+   
+    width: 40%;
+}
+.left-bar i{
+    font-size: 30px;
+    color: beige;
+    padding: 10px 0px;
+}
+.left-bar a{
+    font-size: 20px;
+    color: beige;
+   text-decoration: none;
+   padding-left: 20px;
+}
+.main .right-bar{
+    position: absolute;
+  
+    width: 40%;
+   right: 5%;
+}
+.main .logos{
+    height: 100px;
+    width: 130px;
+    padding:5px;
+}
+.main .logos:hover{
+    height: 110px;
+    width: 140px;
+    padding:5px;
+}
+.left-bar .icons{
+margin-top: 80px;
+}
+.left-bar .icons i{
+    font-size: 50px;
+    margin-left: 15px;
+    color: cornflowerblue;
+    padding: 5px;
+}
+.left-bar .icons i:hover{
+background-color: bisque;
+font-size: 55px;
+border-radius: 50%;
+}
+.footer .copy{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    font-size: 20px;
+    
+   
+}
